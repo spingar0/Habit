@@ -1,0 +1,125 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Habit Tracker</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #FFFFFF;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #87CEEB;
+      padding: 20px;
+      color: white;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #C6F4D6;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+    .welcome {
+      text-align: center;
+      margin-top: 40px;
+    }
+    .welcome h1 {
+      color: #87CEEB;
+      font-size: 36px;
+    }
+    .welcome p {
+      font-size: 18px;
+      color: #555;
+    }
+    .container {
+      max-width: 1000px;
+      margin: auto;
+      padding: 20px;
+    }
+    .habit-form, .habit-list, .progress, .goals, .analysis {
+      margin-top: 30px;
+      background-color: #f1f1f1;
+      padding: 20px;
+      border-radius: 8px;
+    }
+    button {
+      background-color: #87CEEB;
+      border: none;
+      padding: 10px 15px;
+      margin: 5px;
+      color: white;
+      font-weight: bold;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    button:hover {
+      background-color: #5ab4d8;
+    }
+    input[type="text"], input[type="number"] {
+      padding: 8px;
+      margin: 5px 0;
+      width: 100%;
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Habit Tracker</h1>
+  </header>
+
+  <nav>
+    <a href="#habits">Hábitos</a>
+    <a href="#goals">Objetivos</a>
+    <a href="#analysis">Análisis</a>
+  </nav>
+
+  <div class="welcome">
+    <h1>Bienvenido a habit</h1>
+    <p><em>Generado con AI</em></p>
+  </div>
+
+  <div class="container">
+    <section class="habit-form" id="habits">
+      <h2>Registrar hábito</h2>
+      <input type="text" placeholder="Nombre del hábito">
+      <input type="number" placeholder="Meta diaria (minutos, páginas, etc.)">
+      <button>Agregar hábito</button>
+    </section>
+
+    <section class="habit-list">
+      <h2>Mis hábitos</h2>
+      <ul>
+        <li>Ejercicio <button>Registrar</button> <button>Editar</button> <button>Eliminar</button></li>
+        <li>Lectura <button>Registrar</button> <button>Editar</button> <button>Eliminar</button></li>
+      </ul>
+    </section>
+
+    <section class="progress">
+      <h2>Progreso</h2>
+      <button>Ver progreso</button>
+    </section>
+
+    <section class="goals" id="goals">
+      <h2>Establecer objetivos</h2>
+      <p>Define tus metas personales para cada hábito.</p>
+    </section>
+
+    <section class="analysis" id="analysis">
+      <h2>Análisis de datos</h2>
+      <p>Visualiza estadísticas de tus hábitos a lo largo del tiempo.</p>
+    </section>
+  </div>
+</body>
+</html>
